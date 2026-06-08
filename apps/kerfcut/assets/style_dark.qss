@@ -1,0 +1,116 @@
+/* KerfCut — Professional Carbon Theme (Dark) */
+
+QMainWindow {
+    background: #1e1e1e;
+}
+
+QWidget {
+    color: #e0e0e0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ── Menu Bar ──────────────────────────────────────────────────────────── */
+QMenuBar {
+    background: #252525;
+    border-bottom: 1px solid #333333;
+    color: #e0e0e0;
+    padding: 2px;
+}
+QMenuBar::item:selected {
+    background: #333333;
+    color: #3498db;
+}
+
+QMenu {
+    background: #252525;
+    border: 1px solid #333333;
+    padding: 5px;
+}
+QMenu::item {
+    color: #e0e0e0;
+}
+QMenu::item:selected {
+    background: #3498db;
+    color: #ffffff;
+}
+
+/* ── Tool Bar ──────────────────────────────────────────────────────────── */
+QToolBar {
+    background: #252525;
+    border-bottom: 1px solid #333333;
+    spacing: 8px;
+    padding: 5px;
+}
+QToolBar QToolButton {
+    color: #e0e0e0;
+}
+QToolBar QToolButton:hover {
+    background: #333333;
+}
+
+/* ── Tabs ──────────────────────────────────────────────────────────────── */
+QTabWidget::pane {
+    border: 1px solid #333333;
+    background: #252525;
+}
+QTabBar::tab {
+    background: #2d2d2d;
+    color: #888888;
+    padding: 10px 20px;
+    border: 1px solid #333333;
+    border-bottom: none;
+    margin-right: 2px;
+}
+QTabBar::tab:selected {
+    background: #252525;
+    color: #3498db;
+    border-bottom: 2px solid #252525;
+}
+
+/* ── Group Boxes ───────────────────────────────────────────────────────── */
+QGroupBox {
+    color: #3498db;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    background: #252525;
+    margin-top: 12px;
+    padding-top: 16px;
+    font-weight: bold;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px;
+    padding: 0 6px;
+    background: #252525;
+    color: #3498db;
+}
+
+/* ── Inputs ────────────────────────────────────────────────────────────── */
+QLineEdit, QSpinBox, QDoubleSpinBox, QTextEdit, QComboBox {
+    border: 1px solid #333333;
+    background: #2d2d2d;
+    color: #e0e0e0;
+}
+QLineEdit:focus {
+    border: 1px solid #3498db;
+}
+
+/* ── Tables ────────────────────────────────────────────────────────────── */
+QTableWidget {
+    background: #1e1e1e;
+    gridline-color: #333333;
+    border: 1px solid #333333;
+}
+QHeaderView::section {
+    background: #252525;
+    color: #888888;
+    border: 1px solid #333333;
+}
+
+/* ── Status Bar ────────────────────────────────────────────────────────── */
+QStatusBar {
+    background: #252525;
+    color: #888888;
+    border-top: 1px solid #333333;
+}

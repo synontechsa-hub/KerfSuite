@@ -1,0 +1,179 @@
+/* KerfCut — Professional Slate Theme (Light) */
+
+QMainWindow {
+    background: #f5f7f9;
+}
+
+QWidget {
+    color: #2c3e50;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ── Menu Bar ──────────────────────────────────────────────────────────── */
+QMenuBar {
+    background: #ffffff;
+    border-bottom: 1px solid #d1d9e6;
+    color: #2c3e50;
+    padding: 2px;
+}
+QMenuBar::item {
+    background: transparent;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+QMenuBar::item:selected {
+    background: #eef2f7;
+    color: #2d6a9f;
+}
+
+QMenu {
+    background: #ffffff;
+    border: 1px solid #d1d9e6;
+    padding: 5px;
+}
+QMenu::item {
+    padding: 6px 25px 6px 20px;
+    border-radius: 3px;
+    color: #2c3e50;
+}
+QMenu::item:selected {
+    background: #3498db;
+    color: #ffffff;
+}
+QMenu::separator {
+    height: 1px;
+    background: #d1d9e6;
+    margin: 4px 10px;
+}
+
+/* ── Tool Bar ──────────────────────────────────────────────────────────── */
+QToolBar {
+    background: #ffffff;
+    border-bottom: 1px solid #d1d9e6;
+    spacing: 8px;
+    padding: 5px;
+}
+QToolBar QToolButton {
+    background: transparent;
+    color: #2c3e50;
+    border-radius: 4px;
+    padding: 6px;
+    font-weight: 500;
+}
+QToolBar QToolButton:hover {
+    background: #eef2f7;
+    color: #2d6a9f;
+}
+QToolBar::separator {
+    width: 1px;
+    background: #d1d9e6;
+    margin: 4px 0;
+}
+
+/* ── Tabs ──────────────────────────────────────────────────────────────── */
+QTabWidget::pane {
+    border: 1px solid #d1d9e6;
+    background: #ffffff;
+    top: -1px;
+}
+QTabBar::tab {
+    background: #f1f4f8;
+    color: #5d6d7e;
+    padding: 10px 20px;
+    border: 1px solid #d1d9e6;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-right: 2px;
+}
+QTabBar::tab:selected {
+    background: #ffffff;
+    color: #2d6a9f;
+    border-bottom: 2px solid #ffffff;
+    font-weight: bold;
+}
+QTabBar::tab:hover:!selected {
+    background: #eef2f7;
+}
+
+/* ── Group Boxes ───────────────────────────────────────────────────────── */
+QGroupBox {
+    font-weight: bold;
+    font-size: 10pt;
+    color: #2d6a9f;
+    border: 1px solid #d1d9e6;
+    border-radius: 6px;
+    margin-top: 15px;
+    padding-top: 15px;
+    background: #ffffff;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 5px;
+    background: #ffffff;
+}
+
+/* ── Inputs ────────────────────────────────────────────────────────────── */
+QLineEdit, QSpinBox, QDoubleSpinBox, QTextEdit, QComboBox {
+    border: 1px solid #d1d9e6;
+    border-radius: 4px;
+    padding: 6px;
+    background: #ffffff;
+    color: #2c3e50;
+    selection-background-color: #3498db;
+    selection-color: #ffffff;
+}
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QComboBox:focus {
+    border: 1px solid #3498db;
+}
+QLineEdit:disabled {
+    background: #f8f9fa;
+    color: #95a5a6;
+}
+
+/* ── Buttons ───────────────────────────────────────────────────────────── */
+QPushButton {
+    background: #ffffff;
+    color: #2c3e50;
+    border: 1px solid #d1d9e6;
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-weight: 500;
+}
+QPushButton:hover {
+    background: #f1f4f8;
+    border-color: #3498db;
+}
+QPushButton:pressed {
+    background: #eef2f7;
+}
+
+/* ── Tables ────────────────────────────────────────────────────────────── */
+QTableWidget {
+    background: #ffffff;
+    gridline-color: #f1f4f8;
+    selection-background-color: #eef2f7;
+    selection-color: #2d6a9f;
+    border: 1px solid #d1d9e6;
+    outline: none;
+}
+QHeaderView::section {
+    background: #f8f9fa;
+    padding: 8px;
+    border: none;
+    border-right: 1px solid #d1d9e6;
+    border-bottom: 1px solid #d1d9e6;
+    font-weight: bold;
+    color: #5d6d7e;
+}
+
+/* ── Status Bar ────────────────────────────────────────────────────────── */
+QStatusBar {
+    background: #ffffff;
+    border-top: 1px solid #d1d9e6;
+    color: #5d6d7e;
+}
+QStatusBar QLabel {
+    color: #5d6d7e;
+}

@@ -1,0 +1,79 @@
+SYNONTECH PROPRIETARY SOURCE LICENSE
+Project: KerfSuite (KerfCut, KerfStock, KerfPortal)
+Copyright (c) 2026 Syn / Synonimity / SynonTech. All rights reserved.
+
+This license applies to the KerfSuite project and its associated repository, encompassing all included applications (KerfCut, KerfStock, KerfPortal).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. OWNERSHIP AND INTELLECTUAL PROPERTY
+
+All components, systems, and materials within this repository — including but not
+limited to source code (frontend and backend), assets, animations, data blueprints,
+AI personality definitions, lore, world maps, UI/UX designs, optimisation algorithms,
+simulation logic, and identity systems — are the sole and exclusive property of Syn
+(operating as Synonimity / SynonTech).
+
+All works are protected by international copyright, trademark, and intellectual
+property laws.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. RESTRICTIONS ON USE
+
+Viewing or accessing this repository is permitted for private informational purposes
+only. Under no circumstances is any person or entity permitted to:
+
+  a) Copy, redistribute, or publish any part of this project's code or assets.
+
+  b) Modify, translate, or create derivative works based on any system, engine,
+     or design within this repository.
+
+  c) Decompile, reverse engineer, or attempt to extract the source code of any
+     component within this project.
+
+  d) Use any part of this project for commercial purposes without express
+     written consent from Syn.
+
+  e) Use any part of this project to train, fine-tune, or augment any machine
+     learning model or AI system without express written consent from Syn.
+
+  f) Integrate, embed, or build upon any SynonTech system within a third-party
+     product or service without a separate written agreement.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3. NO GRANT OF LICENSE
+
+Access to this repository does not constitute a license of any kind. No implied,
+express, or statutory license is granted. The right to view this repository does
+not confer the right to use, run, copy, or build upon any code contained within
+it, except for local development and testing by explicitly authorized contributors.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. AUTHORIZED CONTRIBUTORS
+
+Individuals explicitly authorized in writing by Syn may access, run, and contribute
+to this project under separately agreed terms. Such authorization is project-specific
+and does not extend to other SynonTech projects unless explicitly stated.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. TERMINATION AND LEGAL ACTION
+
+Any unauthorized use, reproduction, modification, or distribution of this project
+or its assets will result in immediate termination of access and will be
+prosecuted to the maximum extent permitted by applicable law.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6. CONTACT
+
+For licensing inquiries, collaboration proposals, or authorized access requests,
+contact Syn directly through the official SynonTech channels.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+"Systems that think, persist, and evolve."
+— Syn / SynonTech, 2026

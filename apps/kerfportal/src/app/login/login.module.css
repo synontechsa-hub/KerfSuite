@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(circle at 50% 0%, #1a1a1a 0%, transparent 70%),
+    linear-gradient(0deg, var(--bg-primary) 0%, transparent 100%);
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 400px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--bg-panel-border);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input {
+  background-color: var(--bg-input);
+  border: 1px solid var(--bg-panel-border);
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent-orange);
+  background-color: #222222;
+}
+
+.input::placeholder {
+  color: #555555;
+}
+
+.errorAlert {
+  background-color: rgba(231, 76, 60, 0.1);
+  border-left: 4px solid var(--status-error);
+  padding: 0.8rem;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.actions {
+  margin-top: 1rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--bg-panel-border);
+}

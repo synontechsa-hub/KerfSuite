@@ -1,0 +1,153 @@
+{
+  "version": "1.0",
+  "app": "KerfCut",
+  "saved_at": "2026-06-03T12:15:11.138305",
+  "name": "Cut test job 1",
+  "customer": "ACME Engineering",
+  "notes": "Test job for ACME Engineering",
+  "material_name": "4mm ACM",
+  "blade_kerf": 3,
+  "markup_percent": 0.0,
+  "hourly_rate": 0.0,
+  "estimated_labor_cost": 0.0,
+  "estimated_labor_minutes": 115.0,
+  "cut_mode": "nested",
+  "sheets": [
+    {
+      "id": "0dd94cc2-9df7-4593-8d2b-06adf75284a3",
+      "width": 1500,
+      "height": 3000,
+      "active": true,
+      "quantity": 100,
+      "buy_price": 0.0,
+      "sell_price": 0.0,
+      "thickness": 4.0,
+      "label": "1500 x 3000 x 4mm ACM Sheet"
+    },
+    {
+      "id": "e638bbe3-fd2b-4ab6-9906-60c40f3a0cb0",
+      "width": 1250,
+      "height": 5000,
+      "active": true,
+      "quantity": 150,
+      "buy_price": 1300.0,
+      "sell_price": 0.0,
+      "thickness": 4.0,
+      "label": "1250 x 5000 x 4mm ACM Sheet"
+    },
+    {
+      "id": "003d7189-5af9-43b9-ae85-234f3f80b908",
+      "width": 1500,
+      "height": 5000,
+      "active": true,
+      "quantity": 200,
+      "buy_price": 1400.0,
+      "sell_price": 0.0,
+      "thickness": 4.0,
+      "label": "1500 x 5000 x 4mm ACM Sheet"
+    },
+    {
+      "id": "5fc9f7b5-fe6e-4837-9551-eac85e56eda8",
+      "width": 1250,
+      "height": 4000,
+      "active": true,
+      "quantity": 200,
+      "buy_price": 0.0,
+      "sell_price": 0.0,
+      "thickness": 4.0,
+      "label": "1250 x 4000 x 4mm ACM Sheet"
+    }
+  ],
+  "pieces": [
+    {
+      "id": "41d37bd0-84e9-4ef3-a28d-87da5982f153",
+      "quantity": 12,
+      "width": 1250,
+      "height": 1100,
+      "can_rotate": false,
+      "label": "P-1"
+    },
+    {
+      "id": "eb367a1a-a430-463f-9e83-e631c159cc0d",
+      "quantity": 3,
+      "width": 1220,
+      "height": 1100,
+      "can_rotate": false,
+      "label": "CP-1"
+    },
+    {
+      "id": "79a3520e-2f57-4a48-b60e-1003fe7c1b07",
+      "quantity": 1,
+      "width": 1250,
+      "height": 680,
+      "can_rotate": false,
+      "label": "IP-1"
+    },
+    {
+      "id": "a071c951-5f54-426e-94ca-e6b8a9f58d54",
+      "quantity": 1,
+      "width": 1220,
+      "height": 680,
+      "can_rotate": false,
+      "label": "ICP-1"
+    },
+    {
+      "id": "b065e70b-114a-4dd8-a2b2-16f2b371e1bf",
+      "quantity": 1,
+      "width": 1250,
+      "height": 770,
+      "can_rotate": false,
+      "label": "IP-2"
+    },
+    {
+      "id": "983f978f-2cb1-4886-913f-30f0966ab932",
+      "quantity": 1,
+      "width": 1220,
+      "height": 770,
+      "can_rotate": false,
+      "label": "ICP-2"
+    },
+    {
+      "id": "5df9e0b4-9af8-4613-8a27-4d9a29d5d2f2",
+      "quantity": 1,
+      "width": 1250,
+      "height": 390,
+      "can_rotate": false,
+      "label": "IP-3"
+    },
+    {
+      "id": "785ef909-4c03-4f7b-802b-1c53f39a0318",
+      "quantity": 1,
+      "width": 1220,
+      "height": 390,
+      "can_rotate": false,
+      "label": "CIP-3"
+    },
+    {
+      "id": "04d1d5de-b106-44b3-98cb-90a3df2896e9",
+      "quantity": 12,
+      "width": 1200,
+      "height": 1200,
+      "can_rotate": false,
+      "label": "FP-1"
+    },
+    {
+      "id": "853eb102-49c1-4f4c-a1e7-37e453fb1f1c",
+      "quantity": 12,
+      "width": 1250,
+      "height": 300,
+      "can_rotate": false,
+      "label": "FP-2"
+    },
+    {
+      "id": "f0e2893c-8fdd-47a8-94f4-0540221d9222",
+      "quantity": 20,
+      "width": 500,
+      "height": 250,
+      "can_rotate": false,
+      "label": "CL-1"
+    }
+  ],
+  "unplaced": [],
+  "layouts": []
+}
