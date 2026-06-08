@@ -115,24 +115,46 @@ ALTER TABLE public.asset_events ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.tags ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.asset_tags ENABLE ROW LEVEL SECURITY;
 
+-- 9. Policies
+
 -- Workspace Isolation Policies
+DROP POLICY IF EXISTS "Users view own workspace" ON public.workspaces;
 CREATE POLICY "Users view own workspace" ON public.workspaces FOR SELECT USING (id IN (SELECT workspace_id FROM public.users WHERE users.id = auth.uid()));
+
+DROP POLICY IF EXISTS "Users view workspace peers" ON public.users;
 CREATE POLICY "Users view workspace peers" ON public.users FOR SELECT USING (workspace_id IN (SELECT workspace_id FROM public.users WHERE users.id = auth.uid()));
+
+DROP POLICY IF EXISTS "Users manage workspace licenses" ON public.license_slots;
 CREATE POLICY "Users manage workspace licenses" ON public.license_slots FOR ALL USING (workspace_id IN (SELECT workspace_id FROM public.users WHERE users.id = auth.uid()));
 
--- KerfStock RLS: Users can fully manage inventory in their workspace
+-- KerfStock RLS Policies
+DROP POLICY IF EXISTS "Workspace isolation for locations" ON public.locations;
 CREATE POLICY "Workspace isolation for locations" ON public.locations FOR ALL USING (workspace_id IN (SELECT workspace_id FROM public.users WHERE users.id = auth.uid()));
+
+DROP POLICY IF EXISTS "Workspace isolation for materials" ON public.materials;
 CREATE POLICY "Workspace isolation for materials" ON public.materials FOR ALL USING (workspace_id IN (SELECT workspace_id FROM public.users WHERE users.id = auth.uid()));
+
+DROP POLICY IF EXISTS "Workspace isolation for assets" ON public.assets;
 CREATE POLICY "Workspace isolation for assets" ON public.assets FOR ALL USING (workspace_id IN (SELECT workspace_id FROM public.users WHERE users.id = auth.uid()));
+
+DROP POLICY IF EXISTS "Workspace isolation for asset events" ON public.asset_events;
 CREATE POLICY "Workspace isolation for asset events" ON public.asset_events FOR ALL USING (workspace_id IN (SELECT workspace_id FROM public.users WHERE users.id = auth.uid()));
+
+DROP POLICY IF EXISTS "Workspace isolation for tags" ON public.tags;
 CREATE POLICY "Workspace isolation for tags" ON public.tags FOR ALL USING (workspace_id IN (SELECT workspace_id FROM public.users WHERE users.id = auth.uid()));
+
+DROP POLICY IF EXISTS "Workspace isolation for asset tags" ON public.asset_tags;
 CREATE POLICY "Workspace isolation for asset tags" ON public.asset_tags FOR ALL USING (
     asset_id IN (
         SELECT id FROM public.assets WHERE workspace_id IN (SELECT workspace_id FROM public.users WHERE users.id = auth.uid())
     )
 );
 
--- 6. Helper Trigger: Auto-create User Profile on Auth Signup
+-- ==========================================
+-- TRIGGERS
+-- ==========================================
+
+-- 10. Helper Trigger: Auto-create User Profile on Auth Signup
 -- This trigger automatically creates a row in public.users when you sign up in Supabase
 CREATE OR REPLACE FUNCTION public.handle_new_user() 
 RETURNS TRIGGER AS $$
